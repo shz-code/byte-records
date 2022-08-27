@@ -1,4 +1,4 @@
-# Simple Todo-app/ Record keeping App with Complete CURD functionality.
+# Simple Todo-app/ Record keeping App with Complete CRUD functionality.
 
 In this app user can easily 
 1. Add new records.
