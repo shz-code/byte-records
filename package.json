@@ -1,6 +1,6 @@
 {
   "homepage": "https://shz-code.github.io/byte-records",
-  "name": "todo-app",
+  "name": "byte-records",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
