@@ -1,5 +1,5 @@
 import { useReducer, useEffect, useState, useCallback } from "react";
-import "./App.css";
+import "./assests/css/App.css";
 import myContext from "./lib/myContext";
 import Navbar from "./components/Navbar";
 import TodosContainer from "./components/TodosContainer";

@@ -84,41 +84,6 @@ input{
   padding: 10px;
 }
 
-.inp_title,.inp_desc{
-  width: 100%;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  padding: 10px 0;
-  border: none;
-  border-radius: 0;
-  border-bottom: 1px solid #1f1f1f;
-}
-
-.inp_title:focus,.inp_desc:focus{
-  border: 1px solid #1f1f1f;
-  outline: none;
-}
-
-.inp_desc{
-  font-weight: normal;
-  font-size: 1rem;
-}
-
-.inp_title.hide,.inp_desc.hide{
-  background: none;
-  border: none;
-  color: black;
-  font-weight: bolder;
-  font-size: 1.2rem;
-  margin: 0;
-  width: 100%;
-}
-
-.inp_desc.hide{
-  font-weight: normal;
-  font-size: 1rem;
-}
-
 .btn_container{
   flex: 20%;
   display: flex;

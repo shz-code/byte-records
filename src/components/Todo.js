@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
+import style from "../assests/css/Input.module.css"
 
 export default function Todo({ records, dispatch }) {
   const sl = records.sl;
@@ -14,7 +15,7 @@ export default function Todo({ records, dispatch }) {
         </p>
         {disabled ? (
           <input
-            className="inp_title hide"
+            className={`${style.inp_title} ${style.inp_hide}`}
             disabled
             type="text"
             value={title}
@@ -23,7 +24,7 @@ export default function Todo({ records, dispatch }) {
           <>
             <span>Title</span>
             <input
-              className="inp_title"
+              className={style.inp_title}
               type="text"
               value={title}
               onChange={(e) => SetTitle(e.target.value)}
@@ -31,12 +32,12 @@ export default function Todo({ records, dispatch }) {
           </>
         )}
         {disabled ? (
-          <input className="inp_desc hide" disabled type="text" value={desc} />
+          <input className={`${style.inp_desc} ${style.inp_hide}`} disabled type="text" value={desc} />
         ) : (
           <>
             <span>Description</span>
             <input
-              className="inp_desc"
+              className={style.inp_desc}
               type="text"
               value={desc}
               onChange={(e) => SetDesc(e.target.value)}

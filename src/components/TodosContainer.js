@@ -15,11 +15,11 @@ function TodosContainer({ handleSearch, show }) {
       {show ? (
         <>
           <div className="searcharea">
-            <h3>Search For Any Records</h3>
+            <h3>Search For Any Records(Using Title)</h3>
             <div className="row">
               <input
                 type="text"
-                placeholder="Search"
+                placeholder="Search Any Title"
                 value={search}
                 onChange={(e) => SetSearch(e.target.value)}
               />

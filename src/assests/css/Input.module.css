@@ -1,0 +1,31 @@
+.inp_title,.inp_desc{
+    background: none;
+    width: 100%;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bolder;
+    padding: 10px 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #1f1f1f;
+  }
+  
+  .inp_title:focus,.inp_desc:focus{
+    border: 1px solid #1f1f1f;
+    outline: none;
+  }
+  
+  .inp_desc{
+    font-weight: normal;
+    font-size: 1rem;
+  }
+  
+  .inp_hide{
+    border: 0;
+    margin: 0;
+  }
+  
+  .inp_desc.hide{
+    font-weight: normal;
+    font-size: 1rem;
+  }
