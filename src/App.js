@@ -22,7 +22,7 @@ const reducer = (state, action) => {
       let title = action.records.records.title;
       let desc = action.records.records.desc;
       if (title === "" || desc === "") {
-        alert("Blank");
+        alert("New Record Can't Be Blank. Sorry!");
         return state;
       }
       let newTodo = {
