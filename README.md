@@ -1,4 +1,4 @@
-# [Byte-Records](#) a simple record keeping app with complete CRUD functionality.
+# [Byte-Records](https://shz-code.github.io/byte-records/) a simple record keeping app with complete CRUD functionality.
 
 In this app user can easily 
 1. Add new records.
