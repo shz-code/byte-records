@@ -1,3 +1,10 @@
+:root{
+  --primary-color: #1f1f1f;
+  --success: #42855B;
+  --danger: #C21010;
+  --warning: #F7EC09;
+}
+
 a{
   text-decoration: none;
   color: red;
@@ -5,12 +12,34 @@ a{
 
 .btn{
   background: none;
-  border: 1px solid #1f1f1f;
+  border: 1px solid var(--primary-color);
   padding: 10px;
   border-radius: 5px;
   margin: 10px;
   width: 70px;
   margin-right: 0;
+  transition: 0.3s ease;
+}
+
+.btn.add:hover{
+  background: var(--success);
+  color: white;
+  
+}
+
+.btn.del:hover{
+  background: var(--danger);
+  color: white;
+  
+}
+.btn.s2:hover{
+  background: var(--warning);
+  
+}
+.btn.up:hover{
+  background: var(--success);
+  color: white;
+  
 }
 
 .container,.nav_container{
@@ -21,7 +50,7 @@ a{
 .navbar{
   font-size: 2rem;
   padding: 10px;
-  background: #1f1f1f;
+  background: var(--primary-color);
   color: white;
   text-align: center;
 }
@@ -33,7 +62,7 @@ a{
   justify-content: center;
   align-items: center;
   margin: 50px auto;
-  box-shadow: 1px 1px 1px 1px #1f1f1f;
+  box-shadow: 1px 1px 1px 1px var(--primary-color);
   padding: 50px;
 }
 
@@ -50,7 +79,7 @@ input{
   width: 100%;
   border-radius: 5px;
   margin: 10px 0;
-  border: 1px solid #1f1f1f;
+  border: 1px solid var(--primary-color);
 }
 
 #title,#desc{
@@ -80,7 +109,7 @@ input{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #1f1f1f;
+  border: 1px solid var(--primary-color);
   border-radius: 5px;
   margin: 10px 0;
 }

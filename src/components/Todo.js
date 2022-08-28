@@ -55,7 +55,7 @@ export default function Todo({ records, dispatch }) {
       <div className="btn_container">
         <Button val="Delete" dispatch={dispatch} type="del" records={records} />
         {disabled ? (
-          <button className="btn" onClick={() => SetDisabled((e) => !e)}>
+          <button className="btn s2" onClick={() => SetDisabled((e) => !e)}>
             Update
           </button>
         ) : (
@@ -66,7 +66,7 @@ export default function Todo({ records, dispatch }) {
               type="up"
               records={{ title, desc, sl }}
             />
-            <button className="btn" onClick={() => SetDisabled((e) => !e)}>
+            <button className="btn s2" onClick={() => SetDisabled((e) => !e)}>
               Done
             </button>
           </>
