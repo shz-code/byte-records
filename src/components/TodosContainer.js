@@ -2,7 +2,7 @@ import React, { memo, useEffect, useState } from "react";
 import AddTodo from "./AddTodo";
 import Todos from "./Todos";
 
-function TodosContainer({ handleSearch, show }) {
+function TodosContainer({ handleSearch, show, found }) {
   const [search, SetSearch] = useState("");
 
   useEffect(() => {
@@ -25,7 +25,7 @@ function TodosContainer({ handleSearch, show }) {
               />
             </div>
           </div>
-          <Todos />
+          {found ? <Todos /> : <h3>No Records Match</h3>}
         </>
       ) : (
         <h3>No Records</h3>

@@ -53,6 +53,7 @@ function App() {
   const [todos, dispatch] = useReducer(reducer, inititalState);
   const [todos_view, SetTodos_view] = useState([]);
   const [show, SetShow] = useState(true);
+  const [found, SetFound] = useState(true);
   const showParameter = todos.length;
 
   useEffect(() => {
@@ -62,9 +63,19 @@ function App() {
     }
   }, [todos]);
 
-  useEffect(()=>{
+  useEffect(() => {
     showParameter < 1 ? SetShow(false) : SetShow(true);
-  },[showParameter]);
+  }, [showParameter]);
+
+  useEffect(()=>{
+    if(todos_view.length === 0)
+    {
+      SetFound(false);
+    }
+    else{
+      SetFound(true);
+    }
+  },[todos_view]);
 
   const handleSearch = useCallback(
     (search_title) => {
@@ -84,7 +95,7 @@ function App() {
       <Navbar />
       <div className="container">
         <myContext.Provider value={{ todos_view, dispatch }}>
-          <TodosContainer handleSearch={handleSearch} show={show}/>
+          <TodosContainer handleSearch={handleSearch} show={show} found={found} />
         </myContext.Provider>
       </div>
       <Footer />
