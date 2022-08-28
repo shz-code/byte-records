@@ -47,6 +47,10 @@ input{
   border: 1px solid #1f1f1f;
 }
 
+#title,#desc{
+  width: auto;
+}
+
 /* .todos_container .row{
   border-bottom: 2px solid #1f1f1f;
 } */
@@ -94,4 +98,19 @@ input{
 
 .btn_container .btn{
   margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .todos_container{
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container{
+    width: 100%;
+  }
+  .todos_container{
+    padding: 10px;
+  }
 }
