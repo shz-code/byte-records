@@ -3,6 +3,7 @@ import "./assests/css/App.css";
 import myContext from "./lib/myContext";
 import Navbar from "./components/Navbar";
 import TodosContainer from "./components/TodosContainer";
+import Footer from "./components/Footer";
 
 let inititalState;
 
@@ -86,6 +87,7 @@ function App() {
           <TodosContainer handleSearch={handleSearch} show={show}/>
         </myContext.Provider>
       </div>
+      <Footer />
     </div>
   );
 }

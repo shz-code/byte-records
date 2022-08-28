@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
-import style from "../assests/css/Input.module.css"
+import style from "../assests/css/Input.module.css";
 
 export default function Todo({ records, dispatch }) {
   const sl = records.sl;
@@ -22,9 +22,10 @@ export default function Todo({ records, dispatch }) {
           />
         ) : (
           <>
-            <span>Title</span>
+            <label htmlFor="updatetitle">Title</label>
             <input
               className={style.inp_title}
+              id="updatetitle"
               type="text"
               value={title}
               onChange={(e) => SetTitle(e.target.value)}
@@ -32,12 +33,18 @@ export default function Todo({ records, dispatch }) {
           </>
         )}
         {disabled ? (
-          <input className={`${style.inp_desc} ${style.inp_hide}`} disabled type="text" value={desc} />
+          <input
+            className={`${style.inp_desc} ${style.inp_hide}`}
+            disabled
+            type="text"
+            value={desc}
+          />
         ) : (
           <>
-            <span>Description</span>
+            <label htmlFor="updatedesc">Description</label>
             <input
               className={style.inp_desc}
+              id="updatedesc"
               type="text"
               value={desc}
               onChange={(e) => SetDesc(e.target.value)}
